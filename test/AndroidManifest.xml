@@ -6,8 +6,11 @@
 
     <uses-sdk android:minSdkVersion="11" />
 
-    <instrumentation
+    <!--<instrumentation
         android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.tech_tec.android.textcounter" />-->
+    <instrumentation
+        android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
         android:targetPackage="com.tech_tec.android.textcounter" />
 
     <application
