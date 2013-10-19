@@ -10,5 +10,10 @@ public class ClipboardWatchService extends Service {
     public IBinder onBind(Intent intent) {
         return null;
     }
+    
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return START_STICKY;
+    }
 
 }
