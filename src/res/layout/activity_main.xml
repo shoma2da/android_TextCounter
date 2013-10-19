@@ -33,13 +33,18 @@
         android:text="@string/copied_string_desc"
         />
 
-    <TextView
-        android:id="@+id/text_copied"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:textSize="30sp"
-        />
+        >
+        <TextView
+            android:id="@+id/text_copied"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            />
+    </ScrollView>
 
     <View
         android:layout_width="match_parent"
