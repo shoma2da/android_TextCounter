@@ -12,7 +12,7 @@ import com.tech_tec.android.textcounter.R;
 
 class Notification {
     
-    static int NOTIFICATION_ID = new Random().nextInt();
+    static int NOTIFICATION_ID = 315;
     
     private Context mContext;
     private NotificationManager mNotificationManager;
