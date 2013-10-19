@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.tech_tec.android.textcounter.clipboard.ClipboardTextGetter;
 import com.tech_tec.android.textcounter.setting.NotificationSetting;
 import com.tech_tec.android.textcounter.setting.NotificationSettingChangeActionImpl;
+import com.tech_tec.android.textcounter.tutorial.InitialDescriptionView;
 
 public class MainActivity extends Activity {
     
@@ -21,6 +22,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getActionBar().hide();
+        
+        new InitialDescriptionView(this).showIfInitialLaunch(); //チュートリアル
         
         mCopiedText = (TextView)findViewById(R.id.text_copied);
         mLengthText = (TextView)findViewById(R.id.text_text_length);

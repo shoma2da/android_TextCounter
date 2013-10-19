@@ -10,5 +10,8 @@
     <string name="text_count">文字数</string>
     <string name="copied_string_desc">コピー中の文字</string>
     <string name="hint">ヒント：文字列をコピーしてからアプリを開いてください</string>
-
+    
+    <!-- チュートリアル -->
+    <string name="tutorial_title">ようこそ</string>
+    <string name="tutorial_message">このアプリはコピーしている文字の文字数を簡単に知ることができるアプリです。\n何か文字をコピーしてからこのアプリを開いてみてください。\nまた、必要であれば文字数を通知からお知らせします。</string>
 </resources>
