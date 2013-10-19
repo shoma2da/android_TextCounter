@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.tech_tec.android.textcounter.clipboard.ClipboardTextGetter;
 import com.tech_tec.android.textcounter.setting.NotificationSetting;
+import com.tech_tec.android.textcounter.setting.NotificationSettingChangeActionImpl;
 
 public class MainActivity extends Activity {
     

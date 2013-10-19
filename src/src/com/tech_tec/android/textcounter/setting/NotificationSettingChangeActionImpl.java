@@ -1,13 +1,12 @@
-package com.tech_tec.android.textcounter;
+package com.tech_tec.android.textcounter.setting;
 
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
 import com.tech_tec.android.textcounter.service.ClipboardWatchService;
-import com.tech_tec.android.textcounter.setting.NotificationSettingChangeAction;
 
-class NotificationSettingChangeActionImpl implements NotificationSettingChangeAction {
+public class NotificationSettingChangeActionImpl implements NotificationSettingChangeAction {
     
     private Context mContext;
     
