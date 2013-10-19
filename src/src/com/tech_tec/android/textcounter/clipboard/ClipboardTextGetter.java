@@ -2,6 +2,7 @@ package com.tech_tec.android.textcounter.clipboard;
 
 import android.content.ClipData;
 import android.content.ClipData.Item;
+import android.content.ClipboardManager.OnPrimaryClipChangedListener;
 import android.content.ClipboardManager;
 import android.content.Context;
 
@@ -28,7 +29,11 @@ public class ClipboardTextGetter {
             return 0;
         }
         
+        
         return text.length();
     }
     
+    public void addOnClipboardChangeListener(OnPrimaryClipChangedListener listener) {
+        mClipboardManager.addPrimaryClipChangedListener(listener);
+    }
 }

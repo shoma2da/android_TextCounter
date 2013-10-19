@@ -1,10 +1,12 @@
 package com.tech_tec.android.textcounter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.tech_tec.android.textcounter.clipboard.ClipboardTextGetter;
+import com.tech_tec.android.textcounter.service.ClipboardWatchService;
 
 public class MainActivity extends Activity {
     
@@ -18,6 +20,8 @@ public class MainActivity extends Activity {
         
         mCopiedText = (TextView)findViewById(R.id.text_copied);
         mLengthText = (TextView)findViewById(R.id.text_text_length);
+        
+        startService(new Intent(this, ClipboardWatchService.class));
     }
     
     @Override
