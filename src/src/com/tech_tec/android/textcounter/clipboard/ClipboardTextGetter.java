@@ -22,4 +22,13 @@ public class ClipboardTextGetter {
         return itemAt.getText().toString();
     }
     
+    public int getTextLength() {
+        String text = getText();
+        if (text == null) {
+            return 0;
+        }
+        
+        return text.length();
+    }
+    
 }
