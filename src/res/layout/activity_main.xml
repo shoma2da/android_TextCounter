@@ -4,19 +4,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity" >
-
+    
     <TextView
-        android:id="@+id/text_copied"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/text_count"
         />
 
     <TextView
         android:id="@+id/text_text_length"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="50sp"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@android:color/black"
+        />
+    
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copied_string_desc"
         />
 
+    <TextView
+        android:id="@+id/text_copied"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@android:color/black"
+        />
     <CheckBox
         android:id="@+id/checkBox_notification_setting"
         android:layout_width="wrap_content"

@@ -44,8 +44,12 @@ public class MainActivity extends Activity {
         super.onResume();
         
         ClipboardTextGetter textGetter = new ClipboardTextGetter(this);
-        mCopiedText.setText(textGetter.getText());
-        mLengthText.setText("文字数：" + textGetter.getTextLength());
+        mLengthText.setText("" + textGetter.getTextLength());
+        if (textGetter.getText() == null) {
+            mCopiedText.setText(R.string.hint);
+        } else {
+            mCopiedText.setText(textGetter.getText());
+        }
     }
 
 }
