@@ -26,9 +26,11 @@ class Notification {
         Intent intent = new Intent(mContext, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 0, intent, 0);
         
+        String message = (string == null) ? mContext.getString(R.string.hint) : string;
+        
         @SuppressWarnings("deprecation")
         android.app.Notification notification = new android.app.Notification.Builder(mContext)
-                                                    .setContentText(string)
+                                                    .setContentText(message)
                                                     .setContentTitle(stringLenght + "文字")
                                                     .setTicker(stringLenght + "文字")
                                                     .setSmallIcon(R.drawable.ic_launcher)
