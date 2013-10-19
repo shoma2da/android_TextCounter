@@ -1,0 +1,25 @@
+package com.tech_tec.android.textcounter.clipboard;
+
+import android.content.ClipData;
+import android.content.ClipData.Item;
+import android.content.ClipboardManager;
+import android.content.Context;
+
+public class ClipboardTextGetter {
+    
+    private ClipboardManager mClipboardManager;
+    
+    public ClipboardTextGetter(Context context) {
+        mClipboardManager = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);
+    }
+    
+    public String getText() {
+        if (mClipboardManager.hasPrimaryClip() == false) {
+            return null;
+        }
+        ClipData clipData = mClipboardManager.getPrimaryClip();
+        Item itemAt = clipData.getItemAt(0);
+        return itemAt.getText().toString();
+    }
+    
+}
