@@ -37,4 +37,21 @@ public class ClipboardTestGetterTest extends AndroidTestCase {
         assertNull(getter.getText());
     }
     
+    public void test文字数が取得できる() {
+        ClipboardTextGetter nullGetter = new ClipboardTextGetter(mock(Context.class)) {
+            @Override
+            public String getText() {
+                return null;
+            }
+        };
+        assertEquals(0, nullGetter.getTextLength());
+        
+        ClipboardTextGetter hogehogeGetter = new ClipboardTextGetter(mock(Context.class)) {
+            public String getText() {
+                return "hogehoge";
+            }
+        };
+        assertEquals(8, hogehogeGetter.getTextLength());
+    }
+    
 }
