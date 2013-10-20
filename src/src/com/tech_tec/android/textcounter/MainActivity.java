@@ -7,6 +7,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.tech_tec.android.textcounter.clipboard.ClipboardTextGetter;
 import com.tech_tec.android.textcounter.setting.NotificationSetting;
 import com.tech_tec.android.textcounter.setting.NotificationSettingChangeActionImpl;
@@ -54,6 +55,18 @@ public class MainActivity extends Activity {
         } else {
             mCopiedText.setText(textGetter.getText());
         }
+    }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        EasyTracker.getInstance(this).activityStart(this);
+    }
+    
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EasyTracker.getInstance(this).activityStop(this);
     }
 
 }
