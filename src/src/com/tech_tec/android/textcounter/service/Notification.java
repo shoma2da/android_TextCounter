@@ -1,10 +1,14 @@
 package com.tech_tec.android.textcounter.service;
 
+import java.util.Map;
+
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
+import com.google.analytics.tracking.android.EasyTracker;
+import com.google.analytics.tracking.android.MapBuilder;
 import com.tech_tec.android.textcounter.MainActivity;
 import com.tech_tec.android.textcounter.R;
 
@@ -35,6 +39,10 @@ class Notification {
                                                     .setContentIntent(pendingIntent)
                                                     .getNotification();
         mNotificationManager.notify(NOTIFICATION_ID, notification);
+        
+        EasyTracker easyTracker = EasyTracker.getInstance(mContext);
+        Map<String, String> event = MapBuilder.createEvent("ui_action", "start_notification", "text_count", null).build();
+        easyTracker.send(event);
     }
     
     void dismiss() {
