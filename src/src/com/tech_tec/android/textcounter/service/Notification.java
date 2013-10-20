@@ -1,7 +1,5 @@
 package com.tech_tec.android.textcounter.service;
 
-import java.util.Random;
-
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
