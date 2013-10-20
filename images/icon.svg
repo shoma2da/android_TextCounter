@@ -69,6 +69,36 @@
        y1="794.50504"
        x2="-206.14288"
        y2="794.50504" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5281"
+       id="linearGradient5341"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99502749,0,0,1.1444142,0.41588077,-152.59493)"
+       x1="-786.71429"
+       y1="794.50504"
+       x2="-206.14288"
+       y2="794.50504" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5281"
+       id="linearGradient5344"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5523107,0,0,1.7853642,332.33291,-659.90448)"
+       x1="-786.71429"
+       y1="794.50504"
+       x2="-206.14288"
+       y2="794.50504" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5281"
+       id="linearGradient5359"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5523107,0,0,1.7853642,332.33291,-659.90448)"
+       x1="-786.71429"
+       y1="794.50504"
+       x2="-206.14288"
+       y2="794.50504" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -77,9 +107,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="-234.80325"
-     inkscape:cy="107.28212"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-422.48635"
+     inkscape:cy="237.86009"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -105,46 +135,45 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       transform="matrix(1.1090048,0,0,1.1090048,-20.772997,57.475621)"
-       id="g5315">
+       id="g5351"
+       transform="translate(1,2.0000153)">
       <g
-         id="g5299"
-         transform="matrix(1.4067281,0,0,1.4067281,317.81387,-432.20877)">
+         id="g5347">
         <rect
-           ry="9.9892969"
-           rx="11.654136"
-           y="462.64792"
-           x="-777.37158"
-           height="599.99994"
-           width="575.69446"
+           ry="15.583984"
+           rx="18.181246"
+           y="295.91632"
+           x="-883.0686"
+           height="936.04083"
+           width="898.12262"
            id="rect5295"
            style="fill:#cccccc;fill-opacity:1;stroke:none" />
         <rect
-           style="fill:url(#linearGradient5333);fill-opacity:1;stroke:none"
+           style="fill:url(#linearGradient5359);fill-opacity:1;stroke:none"
            id="rect3827"
-           width="575.69446"
-           height="599.99994"
-           x="-781.39142"
-           y="456.64792"
-           rx="11.654136"
-           ry="9.9892969" />
+           width="898.12262"
+           height="936.04083"
+           x="-887.33978"
+           y="290.55591"
+           rx="18.181246"
+           ry="15.583984" />
       </g>
       <text
          sodipodi:linespacing="125%"
          id="text3817"
-         y="571.7063"
-         x="-358.3577"
-         style="font-size:56.26912689px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         y="691.50067"
+         x="-418.19339"
+         style="font-size:62.40273285px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
-           style="font-size:140.67280579px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:'ヒラギノ丸ゴ Pro';-inkscape-font-specification:'ヒラギノ丸ゴ Pro Bold'"
+           style="font-size:156.00682068px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;font-family:'ヒラギノ丸ゴ Pro';-inkscape-font-specification:'ヒラギノ丸ゴ Pro Bold'"
            id="tspan3821"
-           y="571.7063"
-           x="-358.3577"
+           y="691.50067"
+           x="-418.19339"
            sodipodi:role="line">これ</tspan><tspan
            id="tspan3825"
-           style="font-size:202.56884766px;font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;text-align:center;text-anchor:middle;font-family:'ヒラギノ角ゴ StdN';-inkscape-font-specification:'ヒラギノ角ゴ StdN Ultra-Bold'"
-           y="792.93774"
-           x="-358.3577"
+           style="font-size:224.64982605px;font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;text-align:center;text-anchor:middle;font-family:'ヒラギノ角ゴ StdN';-inkscape-font-specification:'ヒラギノ角ゴ StdN Ultra-Bold'"
+           y="936.84741"
+           x="-418.19339"
            sodipodi:role="line">何文字？</tspan></text>
     </g>
     <rect
@@ -155,6 +184,8 @@
        height="1024"
        width="1024"
        id="rect5311"
-       style="fill:#cccccc;fill-opacity:0;stroke:none" />
+       style="fill:#cccccc;fill-opacity:0;stroke:none"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
