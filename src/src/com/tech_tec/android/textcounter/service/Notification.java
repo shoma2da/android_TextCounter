@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
+import com.flurry.android.FlurryAgent;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.tech_tec.android.textcounter.MainActivity;
@@ -40,9 +41,12 @@ class Notification {
                                                     .getNotification();
         mNotificationManager.notify(NOTIFICATION_ID, notification);
         
+        //ログ取得(Google, Flurry)
         EasyTracker easyTracker = EasyTracker.getInstance(mContext);
         Map<String, String> event = MapBuilder.createEvent("ui_action", "start_notification", "text_count", null).build();
         easyTracker.send(event);
+        //---
+        FlurryAgent.logEvent("start_notification");
     }
     
     void dismiss() {
