@@ -1,5 +1,7 @@
 package com.tech_tec.android.textcounter;
 
+import java.io.Flushable;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.CheckBox;
@@ -7,6 +9,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.flurry.android.FlurryAgent;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.tech_tec.android.textcounter.clipboard.ClipboardTextGetter;
 import com.tech_tec.android.textcounter.setting.NotificationSetting;
@@ -61,12 +64,14 @@ public class MainActivity extends Activity {
     protected void onStart() {
         super.onStart();
         EasyTracker.getInstance(this).activityStart(this);
+        FlurryAgent.onStartSession(this, "NVQZJFV4C8WGFFSKQ25X");
     }
     
     @Override
     protected void onStop() {
         super.onStop();
         EasyTracker.getInstance(this).activityStop(this);
+        FlurryAgent.onEndSession(this);
     }
 
 }
