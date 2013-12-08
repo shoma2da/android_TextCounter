@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_count"
             android:textColor="@android:color/black"
+            android:typeface="serif"
             />
 
         <TextView
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:textSize="70sp"
             android:textColor="@android:color/black"
+            android:typeface="serif"
             />
     </LinearLayout>
     
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:text="@string/copied_string_desc"
         android:textColor="@android:color/black"
+        android:typeface="serif"
         />
 
     <ScrollView
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@android:color/black"
+            android:typeface="serif"
             />
     </ScrollView>
 
