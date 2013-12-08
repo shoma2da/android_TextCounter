@@ -3,46 +3,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/white"
     tools:context=".MainActivity" >
     
-    <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_count"
-        />
-
-    <TextView
-        android:id="@+id/text_text_length"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50sp"
-        />
-    
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0.5dip"
-        android:background="@android:color/black"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#66ccfc"
+        >
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_count"
+            android:textColor="@android:color/black"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:id="@+id/text_text_length"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:textColor="@android:color/black"
+            android:typeface="serif"
+            />
+    </LinearLayout>
     
     <TextView
+        android:layout_marginTop="10dip"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/copied_string_desc"
+        android:textColor="@android:color/black"
+        android:typeface="serif"
         />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
+        android:layout_marginBottom="10dip"
         >
         <TextView
             android:id="@+id/text_copied"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:typeface="serif"
             />
     </ScrollView>
 
@@ -50,6 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="0.5dip"
         android:background="@android:color/black"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
         />
     <CheckBox
         android:id="@+id/checkBox_notification_setting"
